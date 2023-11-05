@@ -41,7 +41,7 @@
     padding-top: 25px;
     padding-bottom: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -50,15 +50,19 @@
 }
 
 #searchbar {
-    float: right;
-    padding: 10px;
-    padding-left: 500px; 
-    border: none;
-    margin-top: 15px;
-    margin-right: 600px;
-    font-size: 18px;
-    height: 10px;
-    width: 40vh;
+    display: flex;
+    margin: auto 0px;
+    height: 40px;
+}
+
+#searchbar input{
+    border: 2px;
+    outline: 2px;
+    background-color: #FFFFFF;
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    width: 300px;
 }
 
 ul {
@@ -94,58 +98,32 @@ ul {
     align-self: center;
     box-shadow: 0.5px 1px lightgrey;
     padding-bottom: 110px;
+    display: grid;
+    align-items: center;
 }
 
 .sidebar {
     display: grid;
-    grid-column: 2;
-    margin: 20px;
-    padding-bottom: 25px;
-    width: fit-content;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 2;
+    width: 250px;
+    grid-gap: 10px;
+    width: 250px;
+    margin: 10px;
 }
 
-.lone_gunmen {
-    grid-column: 1;
-    grid-template-columns: 30% 30%;
-    border: 1px solid lightgrey;
-    align-self: center;
-    box-shadow: 0.5px 1px lightgrey;
-    margin-right: 10px;
-    padding: 2px;
-    width: fit-content;
+.side {
+    box-shadow: 1px 1px 8px gray;
 }
 
-.predators {
-    grid-column: 2;
-    grid-template-columns: 30% 30%;
-    border: 1px solid lightgrey;
-    align-self: center;
-    box-shadow: 0.5px 1px lightgrey;
-    margin-right: 10px;
-    padding: 3px;
-    width: fit-content;
-
+.side img{
+    width: 220px;
+    padding: 15px 15px 0px 15px;
 }
 
-.millenium {
-    grid-column: 1;
-    grid-template-columns: 30% 30%;
-    border: 1px solid lightgrey;
-    align-self: center;
-    box-shadow: 0.5px 1px lightgrey;
-    margin-right: 10px;
-    padding: 2px;
-    width: fit-content;
-}
-
-.rage {
-    grid-column: 2;
-    grid-template-columns: 30% 30%;
-    border: 1px solid lightgrey;
-    align-self: center;
-    box-shadow: 0.5px 1px lightgrey;
-    margin-right: 10px;
-    padding: 3px; width: fit-content;
+p{
+    padding: 0px 15px 0px 15px;
+    line-height: 1.5;
 }
 
 .avengers_endgame {
@@ -156,9 +134,102 @@ ul {
 button {
     background-color: #1e90ff;
     border: 0px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
     margin-left: 90px;
     border-radius: 5px;
     color: white;
+    
 }
+
+.button {
+    background-color: #1e90ff;
+    border: 0px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 90px;
+    border-radius: 5px;
+    color: white;
+    align-self: center;
+}
+
+@media (width <= 1280px) {
+    .container {
+      padding: 0;
+      grid-gap: 1vw
+    }
+  
+    .main {
+      width: 48vw;
+    }
+  
+    .main img {
+      width: 48vw;
+    }
+  
+    .sidebar {
+      grid-template-columns: 24vw 24vw;
+      width: 24vw;
+      grid-gap: 1vw
+    }
+  
+    .sidebar img {
+      width: 21.5vw;
+    }
+  }
+  /* When screen size is less than or equall to 1024px */
+  @media (width <= 1024px) {
+    .container {
+      padding: 0;
+      grid-gap: 1.5vw;
+    }
+  
+    .main {
+      width: 64vw;
+    }
+  
+    .main img {
+      width: 64vw;
+    }
+  
+    .sidebar {
+      grid-template-columns: 32vw;
+      width: 32vw;
+      grid-gap: 1.5vw;
+    }
+  
+    .sidebar img {
+      width: 29vw;
+    }
+  }
+
+  /* When screen size is less than or equall to 800px */
+  @media (width <= 800px) {
+    .container {
+      padding: 0;
+      grid-template-columns: 98vw;
+      grid-gap: 2vw;
+    }
+  
+    .main {
+      width: 98vw;
+    }
+  
+    .main img {
+      width: 98vw;
+    }
+  
+    .sidebar {
+      grid-template-columns: 49% 49%;
+      width: 100%;
+      grid-gap: 2vw;
+    }
+  
+    .sidebar img {
+      width: 44vw;
+    }
+  
+    .searchbar {
+      display: none;
+    }
+  }

@@ -1,0 +1,95 @@
+/*This whole scss acts as the "backbone" for the whole code, everything that deals with the aesthetic of the website*/
+@import "centering";
+@import "mediaqueries";
+
+$hover-color: #444;
+$color1: #4e89ae;
+$color2: #43658b;
+$color3: #ed6663;
+$color4: #ffa372;
+$color5: #8ccff7;
+/*The part above is a collection of the colors used*/
+header{
+    @include center();
+    @include image1();
+    @include image2();
+    @include image3();
+    background-color: $color5;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: $color5;
+    height:50px;
+    width:100%;
+}
+/*makes the rows and the circles responsive (change color when mouse hovers over*/
+.lines:hover, .circles.circle1:hover, .circles.circle2:hover, .circles.circle3:hover, .circles.circle4:hover{
+    background-color: $hover-color;
+}
+
+.lines-container{ /*container for lines*/
+    margin-bottom: 50px;
+}
+
+.line1{
+    background-color: $color1;
+    height: 50px;
+    width:100%;
+}
+
+.line2{
+    background-color: $color2;
+    height: 50px;
+    width:100%;
+}
+
+.line3{
+    background-color: $color3;
+    height: 50px;
+    width:100%;
+}
+
+.line4{
+    background-color: $color4;
+    height: 50px;
+    width:100%;
+}
+
+.circles-container{     /*container for circles*/
+    margin:  50px 0px 50px 0px;
+    @include center();
+    @include breakpoint-circles();
+}
+
+.circle1{
+    background-color: $color1;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.circle2{
+    background-color: $color2;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.circle3{
+    background-color: $color3;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.circle4{
+    background-color: $color4;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}

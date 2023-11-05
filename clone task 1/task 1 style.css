@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+section img {
+    width: calc(100% / 3);
+    float: left;
+    background-color: white;
+}
+
+.logo {
+    background-color: white;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-left: 18px;
+    height: 85px;
+}
+
+header, .text {
+    background-color: white;
+}
+
+.text {
+    color: black;
+    float: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 1024px) {  /*this media querie is for resolution view of 1024px and above*/
+    body {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1023.9px) and (min-width: 800px) { /*this media querie is for resolution view of 800pxpx and 1024px*/
+    section img {
+        width: calc(100% / 2);
+        float: left;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text {
+        color: black;
+        float: center;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 799.9px) and (min-width: 480px) { /*this media querie is for resolution view of 480px and 800px*/
+    section img {
+        width: calc(100% / 1);
+        float: left;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text {
+        color: black;
+        float: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 479.9px) { /*this media querie is for resolution view of 480px and below*/
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section img {
+        width: calc(100% / 1);
+        float: left;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,125 @@
+/*CSS FILE BASICALLY A COPY PASTE OF THE EXACT LINES OF CODE AS SEEN ON SCSS EXCEPT FOR THE IMPORTATION OF _centering.scss and _mediaqueries.scss
+*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8ccff7;
+  margin-bottom: 50px;
+}
+@media (min-width: 801px) {
+  header .image1 {
+    display: block;
+  }
+  header .image2 {
+    display: none;
+  }
+  header .image3 {
+    display: none;
+  }
+}
+@media (max-width: 801px) and (min-width: 481px) {
+  header .image1 {
+    display: none;
+  }
+  header .image2 {
+    display: block;
+  }
+  header .image3 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  header .image1 {
+    display: none;
+  }
+  header .image2 {
+    display: none;
+  }
+  header .image3 {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #8ccff7;
+  height: 50px;
+  width: 100%;
+}
+
+.lines:hover, .circles.circle1:hover, .circles.circle2:hover, .circles.circle3:hover, .circles.circle4:hover {
+  background-color: #444;
+}
+
+.lines-container {
+  margin-bottom: 50px;
+}
+
+.line1 {
+  background-color: #4e89ae;
+  height: 50px;
+  width: 100%;
+}
+
+.line2 {
+  background-color: #43658b;
+  height: 50px;
+  width: 100%;
+}
+
+.line3 {
+  background-color: #ed6663;
+  height: 50px;
+  width: 100%;
+}
+
+.line4 {
+  background-color: #ffa372;
+  height: 50px;
+  width: 100%;
+}
+
+.circles-container {
+  margin: 50px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 621px) {
+  .circles-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.circle1 {
+  background-color: #4e89ae;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.circle2 {
+  background-color: #43658b;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.circle3 {
+  background-color: #ed6663;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.circle4 {
+  background-color: #ffa372;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}

@@ -1,0 +1,50 @@
+@mixin image1() {
+    @media (min-width:801px) {
+        .image1{
+            display: block;
+        }
+        .image2{
+            display: none;
+        }
+        .image3{
+            display: none;
+        }
+    }
+}
+
+@mixin image2() {
+    @media (max-width:801px) and (min-width:481px) {
+        .image1{
+            display: none;
+        }
+        .image2{
+            display: block;
+        }
+        .image3{
+            display: none;
+        }
+    }
+}
+
+@mixin image3() {
+    @media (max-width:480px) {
+        .image1{
+            display: none;
+        }
+        .image2{
+            display: none;
+        }
+        .image3{
+            display: block;
+        }
+    }
+}
+
+@mixin breakpoint-circles(){
+    @media (max-width:621px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*this scss focuses solely on media queries for the views for the required resolutions*/
