@@ -158,14 +158,14 @@ button {
     border: 0px;
     padding: 10px;
     margin-top: 20px;
-    margin-left: 220vw;
+    margin-left: 30vw;
     margin-bottom: 30px;
     border-radius: 5px;
     color: white;
     width: 100px;
 }
 
-
+/*media querie for 1280 res and above*/
 @media (width<=1280px){
     .left-nav{
         margin:auto;
@@ -204,6 +204,7 @@ button {
     }
 
 }
+/*media querie for 1024 res up until 1279 res*/
 @media (width<=1024px){
     .left-nav{
         margin:auto;
@@ -229,6 +230,7 @@ button {
         display: none;
     }
 }
+/*media querie for 800 res up to 1023*/
 @media (width<=800px){
     .left-nav{
         margin:auto;
@@ -280,6 +282,7 @@ button {
         width: 100px;
     }
 }
+/*media querie for 480 res up until 799 res*/
 @media (width<=480px){
     .left-nav{
         margin:auto;
